@@ -6,96 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <!--Vínculo de iconos fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Vínculo  materialize.css-->
-  <link type="text/css" rel="stylesheet" href="vendors/materialize/css/materialize.css" />
+  <link type="text/css" rel="stylesheet" href="vendors/materialize/css/materialize.css">
   <!-- Vínvulo main.css-->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
   <!-- ENCABEZADO-->
   <header>
-    <nav>
-      <div class="container">
-        <div class="row">
-          <div class="col s6"></div>
-          <div class="col s6"></div>
-          <div class="col m6"></div>
-        </div>
+    <div class="navbar-fixed put">
+      <nav class="lime lighten-5 put">
+      <div class=" row nav-wrapper put">
+        <a href="#!" class="brand-logo"><img class="" alt="Brand" src="assets/images/logoForma.png"></a>
+        <a href="#" data-activates="dropdown1" class="dropdown-button button-collapse pulse"><i class="material-icons grey-text text-darken-3">menu</i></a>
+        <ul class="right hide-on-med-and-down ">
+          <li><a class="black-text text-darken-3" href="#">Travel</a></li>
+          <li><a class="black-text text-darken-3"href="#">Drive</a></li>
+          <li><a class="black-text text-darken-3"href="#">Log in</a></li>
+        </ul>
+        <ul class="dropdown-content" id="dropdown1">
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Drive</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
       </div>
     </nav>
+    </div>
   </header>
-  <!-- FIRST SECTION: Primra Imagen de fondo,resgistro -->
-  <section class="first-section">
-    <div class="container">
-      <div class="row first-background-image background-image flex">
-        <!-- Primera columna: "Descarga la app", solo mobile -->
-        <div class="col s6">
-          <div class="form-group">
-          <h2><strong>Comienza a viajar con <img class=""src="assets/images/logoBlanco.png" alt=""></strong></h2>
-          </div>
-          <div class="form-group">
-          <button type="input" class=""><strong>Descarga el app</strong></button>
-          </div>
-        </div>
-        </div>
-        <!-- Segunda columna: Registro, solo tablet y desktop -->
-        <div class="col m6 hidden-s">
-          <h1><strong>Disfruta del viaje eres dueño de tu tiempo</strong></h1>
-          <form>
-            <h3>Viaja con <img class=""src="assets/images/logoBlanco.png" alt="img-lab"></h3>
-            <div class="form-group">
-            <button type="input" class="" data-toggle="modal" data-target="#registryModal2"><strong>REGÍSTRATE</strong></button>
+  <!-- FIRST SECTION: Primra Imagen de fondo,registro -->
+  <section class="first-section col s12 m12put">
+    <div class="first-background-image background-image valign-wrapper">
+      <div class="row">
+           <!-- Primera columna: "Descarga la app", solo mobile -->
+            <div class=" col s9 offset-s3 hide-on-med-and-up amber darken-2">
+              <div class="margin-element">
+              <h4><strong class="lime-text text-lighten-5">Comienza a viajar con <img class="img-lab responsive-img"src="assets/images/logoBlanco.png" alt=""></strong></h4>
+              </div>
+              <div class="margin-element">
+              <button type="input" class="btn lime lighten-5"><strong class="black-text">Descarga el app</strong></button>
+              </div>
             </div>
-<h5>o bien </h5>
-<div class="form-group">
-<button type="input" class="" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
-</div>
-</form>
-        </div>
+            <!-- Segunda columna: Registro, solo tablet y desktop -->
+            <div class=" col m7 offset-m5  col l5 offset-l7 col xl4 offset-xl8  hide-on-small-only put  amber darken-2 padding-column">
+              <h3 class="margin-element lime-text text-lighten-5"><strong>Disfruta del viaje eres dueño de tu tiempo</strong></h3>
+              <form>
+                <h4 class="margin-element lime-text text-lighten-5">Viaja con <img class="responsive-img"src="assets/images/logoBlanco.png" alt=""></h4>
+                <div class="margin-element">
+                <button type="input" class="btn lime lighten-5" data-toggle="modal" data-target="#registryModal2"><strong class="black-text">REGÍSTRATE</strong></button>
+                </div>
+  <p class="margin-element lime-text text-lighten-5">o bien </p>
+  <div class="margin-element">
+  <button type="input" class="btn  lime lighten-5" data-toggle="modal" data-target="#becomeDriverModal"><strong class="black-text">Conviertete en un conductor</strong></button>
+  </div>
+  </form>
+
+            </div>
       </div>
     </div>
-  </section>
   <!-- SECOND SECTION: Imagen telefono móvil-->
   <section class="second-section">
-    <div class="container">
+    <div class="amber darken-2">
       <div class="row">
         <!-- Primera columna: Imagen telefono móvil-->
-        <div class="col s11 m8">
-          <h2 class="hidden-sm hidden-md hidden-lg text-center ">La nueva app</h2>
-        <figure class="col m6">
-          <img src="assets/images/iPhone6Plus.png" alt="img-responsive" class="img-responsive">
+        <div class="col s10 offset-s1 col m10 l9 xl8  col-border">
+          <h3 class="hide-on-med-and-up lime-text text-lighten-5 center-align ">La nueva app</h3>
+        <figure class="col m4 xl5">
+          <img src="assets/images/iPhone6Plus.png" alt="responsive-img" class="responsive-img">
         </figure>
            <!-- Sub-columna: Texto solo visible en tablet, desktop-->
-           <div class=" col m6 col-md-5 hidden-xs margin-top-colum">
-          <h2>Descarga la nueva app</h2>
-          <p><small>La versión actualizada de labcar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</small></p>
-          <p><small>Con solo tocar un botón, un auto llega a tu ubicación: Súbete y no te preocupes: Tu conductor sabe exactamente a donde ir.</small></p>
+           <div class=" col m7 offset-l1 offset-m0 xl6 l6 hide-on-small-only margin-column-desktop">
+          <h4 class="lime-text text-lighten-5">Descarga la nueva app</h4>
+          <p class="lime-text text-lighten-5">La versión actualizada de labcar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+          <br>
+          <p class="lime-text text-lighten-5"> Con solo tocar un botón, un auto llega a tu ubicación: Súbete y no te preocupes: Tu conductor sabe exactamente a donde ir.</p>
         </div>
         </div>
         <!-- Segunda columna: Texto inferior, solo visible en mobile-->
-        <div class="col s12 hidden-sm hidden-md hidden-lg">
-          <h4>Llega a tu destino aún más rápido</h4>
+        <div class="col s12 hide-on-med-and-up">
+          <h6 class="lime-text text-lighten-5 margin-element "><strong>Llega a tu destino aún más rápido</strong></h6>
         </div>
       </div>
     </div>
   </section>
   <!-- THIRD SECTION: Corviertete en conductor-->
   <section class="third-section">
-    <div class="container background-image second-background-image">
+    <div class="background-image second-background-image">
       <div class="row">
-        <div class="col s12 col-sm-offset-8 col-sm-4 opacity">
-          <h2>Conduce cuando quieras</h2>
-          <p>LabCar es un opción flexible para alcanzar tus metas financieras</p>
-          <button type="input" class="" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
+        <div class="col s12 offset-l8 l4 offset-m6 m6 opacity ">
+          <h4 class="lime-text text-lighten-5 margin-element">Conduce cuando quieras</h4>
+          <h6 class="lime-text text-lighten-5 margin-element">LabCar es un opción flexible para alcanzar tus metas financieras</h6>
+          <button type="input" class=" margin-element btn amber darken-2" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
         </div>
       </div>
     </div>
   </section>
   <!-- FOUR SECTION: Tarifa y mapa-->
   <section class="four-section">
-    <div class="container">
+    <div class="contain">
       <div class="row">
         <!-- Primera columna: Tarifa-->
         <div class="col col-xs-12 col-sm-offset-1 col-sm-6 col-md-4">
@@ -135,11 +146,11 @@
     </div>
   </section>
   <!--FOOTER-->
-  <div role="navigator"class="container">
+  <div role="navigator"class="contair">
     <div class="row">
       <br>
       <!--Primera Fila: Imagen del logo-->
-      <div class="container">
+      <div class="contair">
         <div class="row">
           <div class="col-xs-12">
             <figure><img src="assets/images/logoBlanco.png" alt="" class="image-responsive"></figure>
@@ -148,7 +159,7 @@
         <hr>
       </div>
       <!--Segunda Fila: 2 columnas de links, columna de redes sociales, columna de logos de apple y playstore-->
-      <div class="container">
+      <div class="contair">
         <div class="row">
           <div class="col-xs-12 ">
             <div class="row">
@@ -197,7 +208,7 @@
         <hr>
       </div>
       <!--Tercera Fila: Copyrigth-->
-      <div class="container">
+      <div class="contain">
         <div class=" row">
           <div class="col-xs-12">
             <p><small>© 2017 LabCar technologies Inc.</small></p>
