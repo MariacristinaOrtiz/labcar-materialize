@@ -32,9 +32,6 @@ height: 30rem;
   max-width: 100%;
   max-height: auto;
 }
-.put {
-  outline:1px solid red;
-}
 .row {
   margin: 0;
   width: 100%;
@@ -47,6 +44,9 @@ height: 30rem;
 .margin-element {
   margin:1rem;
 }
+.fig-padding {
+  padding: 1rem;
+}
 /* ESTILO MODALES*/
 
 
@@ -57,7 +57,7 @@ height: 30rem;
   .opacity {
     height: 15rem;
   }
-  .col-border {
+  .col-border-phone {
     border-left: none;
     margin: 1rem;
   }

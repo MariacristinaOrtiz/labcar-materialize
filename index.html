@@ -72,7 +72,7 @@
     <div class="amber darken-2">
       <div class="row">
         <!-- Primera columna: Imagen telefono móvil-->
-        <div class="col s10 offset-s1 col m10 l9 xl8  col-border">
+        <div class="col s10 offset-s1 col m10 l9 xl8  col-border col-border-phone">
           <h3 class="hide-on-med-and-up lime-text text-lighten-5 center-align ">La nueva app</h3>
         <figure class="col m4 xl5">
           <img src="assets/images/iPhone6Plus.png" alt="responsive-img" class="responsive-img">
@@ -106,38 +106,38 @@
   </section>
   <!-- FOUR SECTION: Tarifa y mapa-->
   <section class="four-section">
-    <div class="contain">
-      <div class="row">
+    <div class="">
+      <div class="row amber darken-2">
         <!-- Primera columna: Tarifa-->
-        <div class="col col-xs-12 col-sm-offset-1 col-sm-6 col-md-4">
+        <div class="col s12 offset-m1 m10 offset-l1 l4 margin-column-desktop">
           <div>
-          <h2>Tarifa</h2>
-          <p>Consulta las tarifa LabCar aquí</p>
+          <h2 class="lime-text text-lighten-5 margin-element">Tarifa</h2>
+          <h5 class="lime-text text-lighten-5 margin-element">Consulta las tarifa LabCar aquí</h5>
           </div>
            <!-- Formulario de ruta-->
-          <form class="form-horizontal">
-    <div class="form-group">
-      <span class="col-xs-1"><img src="assets/images/shape.png" alt=""></span>
-      <div class="col-xs-11">
-        <input type="text" class="" placeholder="Ingrese su punto de partida">
+          <form >
+    <div class="input-field ">
+      <span class="col s1"><img src="assets/images/shape.png" alt=""></span>
+      <div class="col s11">
+        <input type="text" class="validate" placeholder="Ingrese su punto de partida">
       </div>
     </div>
-    <div class="form-group">
-      <span class="col-xs-1 "><img src="assets/images/shape2.png" alt=""></span>
-      <div class="col-xs-11 background-color">
-        <input type="text" class=""  placeholder="Ingrese su punto de destino">
+    <div class="input-field ">
+      <span class="col s1 "><img src="assets/images/shape2.png" alt=""></span>
+      <div class="col s11 background-color">
+        <input type="text" class="validate"  placeholder="Ingrese su punto de destino">
       </div>
     </div>
-    <div class="form-group">
-      <div class="col-xs-offset-4 col-xs-8">
-        <button type="submit" class=""><strong>¡TRAZAR RUTA!</strong></button>
+    <div class="input-field ">
+      <div class="offset-s3 col s8">
+        <button type="submit" class=" btn lime lighten-5"><strong class="black-text">¡TRAZAR RUTA!</strong></button>
       </div>
     </div>
   </form>
 
         </div>
         <!-- Segunda columna: Mapa-->
-        <div class="col col-xs-12 col-md-offset-1 col-sm-5 col-md-5">
+        <div class="col s12 offset-m1 offset-l1 m10 l5">
           <figure class="col-border fig-padding">
             <iframe class="iframe-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.3775091507634!2d-77.009065941913!3d-12.128907297853162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ff88c5ffb5%3A0x3bed721963f4e924!2sBenavides%2C+Miraflores+15048!5e0!3m2!1ses!2spe!4v1513384512528" width="600" height="400" frameborder="1" style="border:0" allowfullscreen></iframe>
           </figure>
@@ -146,78 +146,120 @@
     </div>
   </section>
   <!--FOOTER-->
-  <div role="navigator"class="contair">
-    <div class="row">
-      <br>
+  <footer class=" grey darken-4 ">
+  <div class="contr">
+    <div class="row ">
       <!--Primera Fila: Imagen del logo-->
-      <div class="contair">
+      <div class="">
         <div class="row">
-          <div class="col-xs-12">
-            <figure><img src="assets/images/logoBlanco.png" alt="" class="image-responsive"></figure>
+          <div class="col s12">
+            <figure><img src="assets/images/logoBlanco.png" alt="" class="responsive-img"></figure>
           </div>
         </div>
-        <hr>
+        <hr class="margin-element">
       </div>
       <!--Segunda Fila: 2 columnas de links, columna de redes sociales, columna de logos de apple y playstore-->
-      <div class="contair">
+      <div class="contai margin-element">
         <div class="row">
-          <div class="col-xs-12 ">
+          <div class="col s12 ">
             <div class="row">
               <!--Primera Columna:Redes sociales-->
-              <div class="col-xs-offset-8 col-xs-4 col-md-offset-0 col-md-3">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+              <div class="offset-s7 col s5 offset-l0 m3 l3">
+                <a href="#"><i class="fa fa-facebook lime-text text-lighten-5" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter lime-text text-lighten-5" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin lime-text text-lighten-5" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-apple lime-text text-lighten-5" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-play lime-text text-lighten-5" aria-hidden="true"></i></a>
               </div>
               <!--Segunda Columna:links-->
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <ul class="list-group list-unstyled">
-                  <li><a href="#">Viaja </a></li>
-                  <li><a href="#">Conduce</a></li>
-                  <li><a href="#">Ciudades</a></li>
-                  <li><a href="#">Ciudades</a></li>
-                  <li><a href="#">Entrega</a></li>
-                  <li><a href="#">¿Cómo funciona?</a></li>
-                  <li><a href="#">Paises</a></li>
-                  <li><a href="#">Seguridad</a></li>
+              <div class="col s6  m3 l3">
+                <ul class="">
+                  <li><a class="lime-text text-lighten-5" href="#">Viaja </a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">Conduce</a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">Ciudades</a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">Ciudades</a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">Entrega</a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">¿Cómo funciona?</a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">Paises</a></li>
+                  <li><a class="lime-text text-lighten-5" href="#">Seguridad</a></li>
                 </ul>
               </div>
               <!--Tercera Columna:links, no visible en mobile-->
-              <div class="hidden-xs hidden-sm col-sm-4 col-md-3 visible-md visible-lg">
-                <ul class="list-group list-unstyled">
-                  <li><a href="#">Oportunidades </a></li>
-                  <li><a href="#">Nuestra historia</a></li>
-                  <li><a href="#">API de LabCar</a></li>
-                  <li><a href="#">Eventos</a></li>
-                  <li><a href="#">Desarrolladores</a></li>
-                  <li><a href="#">Servicios</a></li>
-                  <li><a href="#">Laboratoria</a></li>
-                  <li><a href="#">Coders</a></li>
+              <div class="hide-on-small-only col m3 l3">
+                <ul class="">
+                  <li><a  class="lime-text text-lighten-5" href="#">Oportunidades </a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">Nuestra historia</a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">API de LabCar</a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">Eventos</a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">Desarrolladores</a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">Servicios</a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">Laboratoria</a></li>
+                  <li><a  class="lime-text text-lighten-5" href="#">Coders</a></li>
                 </ul>
               </div>
               <!--Cuarta Columna:Logo(link) apple y playstore-->
-              <div class=" col-xs-offset-1 col-sm-offset-3 col-md-offset-0 col-xs-5 col-sm-4 col-md-3">
-                <figure><a href="#"><img class="img-responsive"src="assets/images/appstore.png" alt=""></a></figure>
-                <figure><a href="#"><img class="img-responsive"src="assets/images/enBadgeWebGeneric.png" alt=""></a></figure>
+              <div class=" col s6 m3 l3">
+                <figure><a href="#"><img class="responsive-img"src="assets/images/appstore.png" alt=""></a></figure>
+                <figure><a href="#"><img class="responsive-img"src="assets/images/enBadgeWebGeneric.png" alt=""></a></figure>
               </div>
             </div>
           </div>
         </div>
-        <hr>
       </div>
+      <hr class="margin-element">
       <!--Tercera Fila: Copyrigth-->
-      <div class="contain">
+      <div class="container margin-element">
         <div class=" row">
-          <div class="col-xs-12">
-            <p><small>© 2017 LabCar technologies Inc.</small></p>
+          <div class="col s12">
+            <p class="lime-text text-lighten-5">© 2017 LabCar technologies Inc.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </footer>
+<!---...........................MODALES.............................----->
+<!-- ...............FIRST MODAL: Login................-->
+<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content background-color col-border">
+      <div class="modal-body ">
+<div class="container-fluid">
+  <div class="row">
+    <div class="center-block col-sm-12">
+      <button type="button" class="close btn-lg center-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      <div class="form-group margin-top-colum ">
+       <figure >
+         <img class="img-responsive img-thumbnail center-block" width="150px" height="150px"src="assets/images/usuario.jpeg" alt="">
+       </figure>
+       </div>
+<form class="form-horizontal col-sm-offset-2 col-sm-8">
+  <div class="input-group form-group">
+<span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1" aria-hidden="true"></span>
+<input type="text" class="form-control input-lg" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1" aria-hidden="true"></span>
+<input type="text" class="form-control input-lg" placeholder="Password" aria-describedby="basic-addon1">
+</div>
+
+  <div class="form-group">
+      <button type="submit" class="btn btn-lg center-block btn-success">LOGING</button>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <h4>Forgot password?<small><a class="text-danger" href="#">click here</a></small></h4>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
