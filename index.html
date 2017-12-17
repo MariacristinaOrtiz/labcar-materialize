@@ -8,16 +8,211 @@
   <title>Document</title>
    <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/materialize.css">
-  <link rel="stylesheet" href="css/materialize.min.css">
+  <!--Vínculo  materialize.css-->
+  <link type="text/css" rel="stylesheet" href="vendors/materialize/css/materialize.css" />
+  <!-- Vínvulo main.css-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+  <!-- ENCABEZADO-->
+  <header>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col s6"></div>
+          <div class="col s6"></div>
+          <div class="col m6"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FIRST SECTION: Primra Imagen de fondo,resgistro -->
+  <section class="first-section">
+    <div class="container">
+      <div class="row first-background-image background-image flex">
+        <!-- Primera columna: "Descarga la app", solo mobile -->
+        <div class="col s6">
+          <div class="form-group">
+          <h2><strong>Comienza a viajar con <img class=""src="assets/images/logoBlanco.png" alt=""></strong></h2>
+          </div>
+          <div class="form-group">
+          <button type="input" class=""><strong>Descarga el app</strong></button>
+          </div>
+        </div>
+        </div>
+        <!-- Segunda columna: Registro, solo tablet y desktop -->
+        <div class="col m6 hidden-s">
+          <h1><strong>Disfruta del viaje eres dueño de tu tiempo</strong></h1>
+          <form>
+            <h3>Viaja con <img class=""src="assets/images/logoBlanco.png" alt="img-lab"></h3>
+            <div class="form-group">
+            <button type="input" class="" data-toggle="modal" data-target="#registryModal2"><strong>REGÍSTRATE</strong></button>
+            </div>
+<h5>o bien </h5>
+<div class="form-group">
+<button type="input" class="" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
+</div>
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECOND SECTION: Imagen telefono móvil-->
+  <section class="second-section">
+    <div class="container">
+      <div class="row">
+        <!-- Primera columna: Imagen telefono móvil-->
+        <div class="col s11 m8">
+          <h2 class="hidden-sm hidden-md hidden-lg text-center ">La nueva app</h2>
+        <figure class="col m6">
+          <img src="assets/images/iPhone6Plus.png" alt="img-responsive" class="img-responsive">
+        </figure>
+           <!-- Sub-columna: Texto solo visible en tablet, desktop-->
+           <div class=" col m6 col-md-5 hidden-xs margin-top-colum">
+          <h2>Descarga la nueva app</h2>
+          <p><small>La versión actualizada de labcar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</small></p>
+          <p><small>Con solo tocar un botón, un auto llega a tu ubicación: Súbete y no te preocupes: Tu conductor sabe exactamente a donde ir.</small></p>
+        </div>
+        </div>
+        <!-- Segunda columna: Texto inferior, solo visible en mobile-->
+        <div class="col s12 hidden-sm hidden-md hidden-lg">
+          <h4>Llega a tu destino aún más rápido</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- THIRD SECTION: Corviertete en conductor-->
+  <section class="third-section">
+    <div class="container background-image second-background-image">
+      <div class="row">
+        <div class="col s12 col-sm-offset-8 col-sm-4 opacity">
+          <h2>Conduce cuando quieras</h2>
+          <p>LabCar es un opción flexible para alcanzar tus metas financieras</p>
+          <button type="input" class="" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOUR SECTION: Tarifa y mapa-->
+  <section class="four-section">
+    <div class="container">
+      <div class="row">
+        <!-- Primera columna: Tarifa-->
+        <div class="col col-xs-12 col-sm-offset-1 col-sm-6 col-md-4">
+          <div>
+          <h2>Tarifa</h2>
+          <p>Consulta las tarifa LabCar aquí</p>
+          </div>
+           <!-- Formulario de ruta-->
+          <form class="form-horizontal">
+    <div class="form-group">
+      <span class="col-xs-1"><img src="assets/images/shape.png" alt=""></span>
+      <div class="col-xs-11">
+        <input type="text" class="" placeholder="Ingrese su punto de partida">
+      </div>
+    </div>
+    <div class="form-group">
+      <span class="col-xs-1 "><img src="assets/images/shape2.png" alt=""></span>
+      <div class="col-xs-11 background-color">
+        <input type="text" class=""  placeholder="Ingrese su punto de destino">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-4 col-xs-8">
+        <button type="submit" class=""><strong>¡TRAZAR RUTA!</strong></button>
+      </div>
+    </div>
+  </form>
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/materialize.js"> </script>
-  <script type="text/javascript" src="js/materialize.min.js"> </script>
+        </div>
+        <!-- Segunda columna: Mapa-->
+        <div class="col col-xs-12 col-md-offset-1 col-sm-5 col-md-5">
+          <figure class="col-border fig-padding">
+            <iframe class="iframe-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.3775091507634!2d-77.009065941913!3d-12.128907297853162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ff88c5ffb5%3A0x3bed721963f4e924!2sBenavides%2C+Miraflores+15048!5e0!3m2!1ses!2spe!4v1513384512528" width="600" height="400" frameborder="1" style="border:0" allowfullscreen></iframe>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--FOOTER-->
+  <div role="navigator"class="container">
+    <div class="row">
+      <br>
+      <!--Primera Fila: Imagen del logo-->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <figure><img src="assets/images/logoBlanco.png" alt="" class="image-responsive"></figure>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <!--Segunda Fila: 2 columnas de links, columna de redes sociales, columna de logos de apple y playstore-->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 ">
+            <div class="row">
+              <!--Primera Columna:Redes sociales-->
+              <div class="col-xs-offset-8 col-xs-4 col-md-offset-0 col-md-3">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+              </div>
+              <!--Segunda Columna:links-->
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <ul class="list-group list-unstyled">
+                  <li><a href="#">Viaja </a></li>
+                  <li><a href="#">Conduce</a></li>
+                  <li><a href="#">Ciudades</a></li>
+                  <li><a href="#">Ciudades</a></li>
+                  <li><a href="#">Entrega</a></li>
+                  <li><a href="#">¿Cómo funciona?</a></li>
+                  <li><a href="#">Paises</a></li>
+                  <li><a href="#">Seguridad</a></li>
+                </ul>
+              </div>
+              <!--Tercera Columna:links, no visible en mobile-->
+              <div class="hidden-xs hidden-sm col-sm-4 col-md-3 visible-md visible-lg">
+                <ul class="list-group list-unstyled">
+                  <li><a href="#">Oportunidades </a></li>
+                  <li><a href="#">Nuestra historia</a></li>
+                  <li><a href="#">API de LabCar</a></li>
+                  <li><a href="#">Eventos</a></li>
+                  <li><a href="#">Desarrolladores</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Laboratoria</a></li>
+                  <li><a href="#">Coders</a></li>
+                </ul>
+              </div>
+              <!--Cuarta Columna:Logo(link) apple y playstore-->
+              <div class=" col-xs-offset-1 col-sm-offset-3 col-md-offset-0 col-xs-5 col-sm-4 col-md-3">
+                <figure><a href="#"><img class="img-responsive"src="assets/images/appstore.png" alt=""></a></figure>
+                <figure><a href="#"><img class="img-responsive"src="assets/images/enBadgeWebGeneric.png" alt=""></a></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <!--Tercera Fila: Copyrigth-->
+      <div class="container">
+        <div class=" row">
+          <div class="col-xs-12">
+            <p><small>© 2017 LabCar technologies Inc.</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!--Vínculo jQuery before materialize.js-->
+  <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendors/materialize/js//materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
