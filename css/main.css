@@ -5,3 +5,67 @@
   margin: 0;
   padding: 0;
 }
+body {
+  padding-top: 70px;
+  font-size: 16px;
+}
+
+/*VERSIÓN MOBILE*/
+.menu-bar{
+  background-color: #fff;
+}
+.background-image {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.first-background-image {
+  background-image:url(../assets/images/taxi.jpg);
+  height: 50rem;
+}
+.background-color {
+background-color:rgb(255, 180, 0);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: rigt;
+}
+.second-background-image {
+  background-image:url(../assets/images/conduce.jpg);
+  height: 40rem;
+}
+.opacity {
+background-color: rgba(0,0,0,.5);
+height: 40rem;
+}
+.iframe-responsive {
+  max-width: 100%;
+  max-height: auto;
+}
+.fig-padding {
+  padding:1rem;
+  margin: 1rem 0.5rem;
+}
+/* ESTILO MODALES*/
+.background-gray-color {
+  background-color:rgb(170,170,170);
+}
+.background-black-color {
+  background-color: rgb(50,50,50);
+}
+@media (min-width:768px){
+  .first-background-image {
+    height: 60rem;
+  }
+  .opacity {
+    height: 20rem;
+  }
+  .margin-top-colum{
+    margin-top: 5rem;
+  }
+  .margin-column-phone {
+    margin:0;
+    border-left: none;
+  }
+}
