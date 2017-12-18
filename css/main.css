@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-/*VERSIÓN MOBILE*/
+/*VERSIÓN MOBILE TABLET Y DESKTOP*/
 /* CLASES REUTILIZABLES*/
 .background-image {
   background-repeat: no-repeat;
@@ -48,7 +48,8 @@
 }
 /* ESTILO MODALES*/
 .modal-size { width: 85%  ; height: 80% ; }
-/* CONDICIONAL PARA TABLETS*/
+
+/* CONDICIONAL SOLO PARA TABLETS*/
 @media (min-width:601px){
   .first-background-image {
     height: 40rem;
@@ -62,7 +63,7 @@
   }
   .modal-size { width: 65%  ; height: 60% ; }
 }
-/* CONDICIONAL PARA DESKTOP*/
+/* CONDICIONAL SOLO PARA DESKTOP*/
 @media (min-width:993px){
   .margin-column-desktop{
     margin-top:5rem;
