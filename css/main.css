@@ -48,6 +48,7 @@ height: 30rem;
   padding: 1rem;
 }
 /* ESTILO MODALES*/
+.modal-size { width: 85%  ; height: 80% ; }
 
 
 @media (min-width:601px){
@@ -61,9 +62,11 @@ height: 30rem;
     border-left: none;
     margin: 1rem;
   }
+  .modal-size { width: 65%  ; height: 60% ; }
 }
 @media (min-width:992px){
   .margin-column-desktop{
     margin-top:5rem;
   }
+  .modal-size { width: 40%  ; height: 75% ; }
 }

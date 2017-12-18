@@ -26,12 +26,12 @@
         <ul class="right hide-on-med-and-down ">
           <li><a class="black-text text-darken-3" href="#">Travel</a></li>
           <li><a class="black-text text-darken-3"href="#">Drive</a></li>
-          <li><a class="black-text text-darken-3"href="#">Log in</a></li>
+          <li><a class="black-text text-darken-3 waves-effect waves-light modal-trigger" href="#login">Log in</a></li>
         </ul>
         <ul class="dropdown-content" id="dropdown1">
           <li><a href="#">Travel</a></li>
           <li><a href="#">Drive</a></li>
-          <li><a href="#">Log in</a></li>
+          <li><a class=" modal-trigger" href="#login">Log in</a></li>
         </ul>
       </div>
     </nav>
@@ -56,11 +56,11 @@
               <form>
                 <h4 class="margin-element lime-text text-lighten-5">Viaja con <img class="responsive-img"src="assets/images/logoBlanco.png" alt=""></h4>
                 <div class="margin-element">
-                <button type="input" class="btn lime lighten-5" data-toggle="modal" data-target="#registryModal2"><strong class="black-text">REGÍSTRATE</strong></button>
+                <button type="input" class="btn z-depth-3 lime lighten-5 modal-trigger"  data-target="registryModal"><strong class="black-text ">REGÍSTRATE</strong></button>
                 </div>
   <p class="margin-element lime-text text-lighten-5">o bien </p>
   <div class="margin-element">
-  <button type="input" class="btn  lime lighten-5" data-toggle="modal" data-target="#becomeDriverModal"><strong class="black-text">Conviertete en un conductor</strong></button>
+  <button type="input" class="btn  z-depth-3 lime lighten-5 modal-trigger"  data-target="becomeDriverModal"><strong class="black-text ">Conviertete en un conductor</strong></button>
   </div>
   </form>
 
@@ -99,7 +99,7 @@
         <div class="col s12 offset-l8 l4 offset-m6 m6 opacity ">
           <h4 class="lime-text text-lighten-5 margin-element">Conduce cuando quieras</h4>
           <h6 class="lime-text text-lighten-5 margin-element">LabCar es un opción flexible para alcanzar tus metas financieras</h6>
-          <button type="input" class=" margin-element btn amber darken-2" data-toggle="modal" data-target="#becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
+          <button type="input" class=" margin-element btn amber darken-2 modal-trigger"  data-target="becomeDriverModal"><strong>Conviertete en un conductor</strong></button>
         </div>
       </div>
     </div>
@@ -220,52 +220,179 @@
 </footer>
 <!---...........................MODALES.............................----->
 <!-- ...............FIRST MODAL: Login................-->
-<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel">
-  <div class="modal-dialog " role="document">
-    <div class="modal-content background-color col-border">
-      <div class="modal-body ">
-<div class="container-fluid">
-  <div class="row">
-    <div class="center-block col-sm-12">
-      <button type="button" class="close btn-lg center-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-      <div class="form-group margin-top-colum ">
-       <figure >
-         <img class="img-responsive img-thumbnail center-block" width="150px" height="150px"src="assets/images/usuario.jpeg" alt="">
-       </figure>
-       </div>
-<form class="form-horizontal col-sm-offset-2 col-sm-8">
-  <div class="input-group form-group">
-<span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1" aria-hidden="true"></span>
-<input type="text" class="form-control input-lg" placeholder="Username" aria-describedby="basic-addon1">
-</div>
-<div class="input-group form-group">
-<span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1" aria-hidden="true"></span>
-<input type="text" class="form-control input-lg" placeholder="Password" aria-describedby="basic-addon1">
-</div>
+  <div id="login" class="modal lime lighten-5  modal-size" >
+    <div class="modal-footer col m12 lime lighten-5 ">
+      <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat"><i class="material-icons grey-text large">cancel</i></a>
+    </div>
+    <div class="modal-content">
+            <div >
+             <figure>
+               <img class="responsive-img center-block circle z-depth-4" width="150px" height="150px"src="assets/images/usuario.jpeg" alt="">
+             </figure>
+             </div >
+             <form class="col m12">
+             <div class="row">
+               <div class="input-field col m9 offset-m1">
+                 <i class="material-icons prefix grey-text">account_circle</i>
+                 <input id="icon_prefix" type="text" class="validate">
+                 <label class="grey-text" for="icon_prefix">Username</label>
+               </div>
+               <div class="input-field col m9 offset-m1">
+                 <i class="material-icons prefix grey-text">https</i>
+                 <input id="icon_telephone" type="text" class="validate">
+                 <label class="grey-text"for="icon_telephone">Password</label>
+               </div>
+        <div class="input-field col s12 center-align margin-element">
+            <button type="submit" class="btn amber darken-1 z-depth-4">LOGING</button>
+        </div>
+        <div class="input-field">
+          <div class="col s12 center-align">
+            <h6 class="black-text">Forgot password?  <small><a class="red-text" href="#">click here</a></small></h6>
+          </div>
+        </div>
+        </div>
+      </form>
 
-  <div class="form-group">
-      <button type="submit" class="btn btn-lg center-block btn-success">LOGING</button>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <h4>Forgot password?<small><a class="text-danger" href="#">click here</a></small></h4>
+
     </div>
   </div>
-</form>
-</div>
-</div>
-</div>
+<!-- ...............SECOND MODAL: Registry................-->
+  <div id="registryModal" class="modal lime lighten-5 modal-size " >
+
+    <div class="modal-content">
+      <div class="">
+        <div class="row">
+          <div class="col s12 ">
+            <div class="col s11 offset-s1 center-block">
+             <button type="button" class="btn black margin-element z-depth-4">Do you already have an account?</button>
+           </div>
+      <p class="center-align">Or create an account</p>
+      <form>
+        <div class="input-field col s6">
+          <input id="exampleInputName1" type="text" class="validate">
+          <label class="grey-text"for="exampleInputName1">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input type="text" class="validate" id="exampleInputLastname1">
+          <label class="grey-text"for="exampleInputLastname1">Last Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" class="validate" id="exampleInputEmail1">
+          <label class="grey-text"for="exampleInputEmail1">E-mail</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" class="validate" id="exampleInputPhone1">
+          <label class="grey-text"for="exampleInputPhone1">Phone</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" class="validate" id="exampleInputPassword1" >
+          <label class="grey-text"for="exampleInputPassword1">Password</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" class="validate"id="exampleInputCity1">
+          <label class="grey-text"for="exampleInputCity1">City</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" class="validate" id="exampleInputInvitation code1" >
+          <label class="grey-text"for="exampleInputInvitation code1">(Optional) invitation code</label>
+        </div>
+      <div class="form-group">
+        <button type="submit" class="btn  blue darken-3 z-depth-4">Submit <i class="material-icons right">send</i</button>
+        </div>
+        <div class="modal-footer col m12 lime lighten-5 ">
+          <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat">close</a>
+        </div>
+      </form>
       </div>
+      </div>
+      </div>
+
+
     </div>
   </div>
+<!-- ...............THIRD MODAL: Become a driver................-->
+<div id="becomeDriverModal" class="modal lime lighten-5 modal-size " >
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 ">
+        <div class="form-group">
+          <button type="button" class="close btn-driver" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
+
+
+        </div>
+  <form>
+    <div class=" btn-gr form-group">
+      <label for="exampleInputVehicle1">Do you have a 4-door vehicle?</label>
+      <select class="form-control">
+        <option value="">Yes</option>
+        <option value="">No</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputBrand1">Brand</label>
+      <select class="form-control">
+        <option value="">Choose the brand of the vehicle</option>
+        <option value="">Chevrolet</option>
+        <option value="">Audi</option>
+        <option value="">Peugeot</option>
+        <option value="">Volkswagen</option>
+        <option value="">Porsche</option>
+        <option value="">Lamborghini</option>
+      </select>
+      <p><small>Do not see your vehicle on this list? Send us an email to <a href="#">sociosmdv@labcar.com</a></small></p>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputModel1">Model</label>
+      <select class="form-control">
+        <option value="">Cross UP</option>
+        <option value="">Golf</option>
+        <option value="">Audi A1</option>
+        <option value="">Audi A3</option>
+        <option value="">Audi A1 Sportback</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputYear1">Year</label>
+      <select class="form-control">
+        <option value="">2017</option>
+        <option value="">2015</option>
+        <option value="">2014</option>
+        <option value="">2013</option>
+        <option value="">2012</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputRegistration1">Registration number</label>
+      <select class="form-control">
+        <option value="">P 4908</option>
+        <option value="">P 5653</option>
+        <option value="">P 7053</option>
+        <option value="">P 7654</option>
+        <option value="">P 5363</option>
+      </select>
+      <p><small>Vehicle registration information helps customers identify your vehicle</small></p>
+    </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="modal-content">
+
+
+
+  </div>
 </div>
-
-
-
   <!--Vínculo jQuery before materialize.js-->
   <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="vendors/materialize/js//materialize.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script >
+
+
+  </script>
 </body>
 </html>
