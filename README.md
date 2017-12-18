@@ -63,7 +63,7 @@ Para resolver dicho reto se hizo lo siguiente:
 
 * Se creó un archivo **app.js** donde se encuentran la funciones que llaman a los **modales** y a las etiquetas **select**; asi mismo, se utilizó los archivos JS de Materialize y jQuery para realizar los modales requeridos: Log in, sign up, become driver.
 
-## Modelos a recrear
+## Modelos usados
 
 ![desktop](assets/docs/desktop.png)
 
