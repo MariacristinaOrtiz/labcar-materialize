@@ -20,74 +20,78 @@
   <header>
     <div class="navbar-fixed put">
       <nav class="lime lighten-5 put">
-      <div class=" row nav-wrapper put">
-        <a href="#!" class="brand-logo"><img class="" alt="Brand" src="assets/images/logoForma.png"></a>
-        <a href="#" data-activates="dropdown1" class="dropdown-button button-collapse pulse"><i class="material-icons grey-text text-darken-3">menu</i></a>
-        <ul class="right hide-on-med-and-down ">
-          <li><a class="black-text text-darken-3" href="#">Travel</a></li>
-          <li><a class="black-text text-darken-3"href="#">Drive</a></li>
-          <li><a class="black-text text-darken-3 waves-effect waves-light modal-trigger" href="#login">Log in</a></li>
-        </ul>
-        <ul class="dropdown-content" id="dropdown1">
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Drive</a></li>
-          <li><a class=" modal-trigger" href="#login">Log in</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class=" row nav-wrapper put">
+          <a href="#!" class="brand-logo"><img class="" alt="Brand" src="assets/images/logoForma.png"></a>
+          <!--Menú hamburguesa: solo para mobile-->
+          <a href="#" data-activates="dropdown1" class="dropdown-button button-collapse pulse"><i class="material-icons grey-text text-darken-3">menu</i></a>
+          <!--Barra de menú: solo para tablet y desktop-->
+          <ul class="right hide-on-med-and-down ">
+            <li><a class="black-text text-darken-3" href="#">Travel</a></li>
+            <li><a class="black-text text-darken-3"href="#">Drive</a></li>
+            <li><a class="black-text text-darken-3 waves-effect waves-light modal-trigger" href="#login">Log in</a></li><!--First modal:log in-->
+          </ul>
+          <!--Lista desplegable del MENÚ HAMBURGUESA-->
+          <ul class="dropdown-content" id="dropdown1">
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Drive</a></li>
+            <li><a class=" modal-trigger" href="#login">Log in</a></li><!--First modal:log in-->
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
   <!-- FIRST SECTION: Primra Imagen de fondo,registro -->
-  <section class="first-section col s12 m12put">
+  <section class="first-section">
     <div class="first-background-image background-image valign-wrapper">
       <div class="row">
-           <!-- Primera columna: "Descarga la app", solo mobile -->
-            <div class=" col s9 offset-s3 hide-on-med-and-up amber darken-2">
-              <div class="margin-element">
-              <h4><strong class="lime-text text-lighten-5">Comienza a viajar con <img class="img-lab responsive-img"src="assets/images/logoBlanco.png" alt=""></strong></h4>
-              </div>
-              <div class="margin-element">
-              <button type="input" class="btn lime lighten-5"><strong class="black-text">Descarga el app</strong></button>
-              </div>
+        <!-- Primera columna: "Descarga la app", solo mobile -->
+        <div class=" col s9 offset-s3 hide-on-med-and-up amber darken-2">
+          <div class="margin-element">
+            <h4><strong class="lime-text text-lighten-5">Start traveling with <img class="img-lab responsive-img"src="assets/images/logoBlanco.png" alt=""></strong></h4>
+          </div>
+          <div class="margin-element">
+            <button type="input" class="btn lime lighten-5"><strong class="black-text">Download the app</strong></button>
+          </div>
+        </div>
+        <!-- Segunda columna: Registro, solo tablet y desktop -->
+        <div class=" col m7 offset-m5  col l5 offset-l7 col xl4 offset-xl8  hide-on-small-only amber darken-2 padding-column">
+          <h3 class="margin-element lime-text text-lighten-5"><strong>Enjoy the trip you own your time</strong></h3>
+          <form>
+            <h4 class="margin-element lime-text text-lighten-5">Travel with <img class="responsive-img"src="assets/images/logoBlanco.png" alt=""></h4>
+            <div class="margin-element">
+              <button type="input" class="btn z-depth-3 lime lighten-5 modal-trigger" data-target="registryModal"><strong class="black-text ">SIGN UP</strong></button><!--Second modal:Sign up-->
             </div>
-            <!-- Segunda columna: Registro, solo tablet y desktop -->
-            <div class=" col m7 offset-m5  col l5 offset-l7 col xl4 offset-xl8  hide-on-small-only put  amber darken-2 padding-column">
-              <h3 class="margin-element lime-text text-lighten-5"><strong>Disfruta del viaje eres dueño de tu tiempo</strong></h3>
-              <form>
-                <h4 class="margin-element lime-text text-lighten-5">Viaja con <img class="responsive-img"src="assets/images/logoBlanco.png" alt=""></h4>
-                <div class="margin-element">
-                <button type="input" class="btn z-depth-3 lime lighten-5 modal-trigger"  data-target="registryModal"><strong class="black-text ">REGÍSTRATE</strong></button>
-                </div>
-  <p class="margin-element lime-text text-lighten-5">o bien </p>
-  <div class="margin-element">
-  <button type="input" class="btn  z-depth-3 lime lighten-5 modal-trigger"  data-target="driverModal"><strong class="black-text ">Conviertete en un conductor</strong></button>
-  </div>
-  </form>
-
+            <p class="margin-element lime-text text-lighten-5">Or else </p>
+            <div class="margin-element">
+              <button type="input" class="btn z-depth-3 lime lighten-5 modal-trigger" data-target="driverModal"><strong class="black-text ">Become a driver</strong></button><!--Third modal:Become driver-->
             </div>
+          </form>
+        </div>
       </div>
     </div>
+  </section>
   <!-- SECOND SECTION: Imagen telefono móvil-->
   <section class="second-section">
     <div class="amber darken-2">
       <div class="row">
         <!-- Primera columna: Imagen telefono móvil-->
         <div class="col s10 offset-s1 col m10 l9 xl8  col-border col-border-phone">
-          <h3 class="hide-on-med-and-up lime-text text-lighten-5 center-align ">La nueva app</h3>
-        <figure class="col m4 xl5">
-          <img src="assets/images/iPhone6Plus.png" alt="responsive-img" class="responsive-img">
-        </figure>
-           <!-- Sub-columna: Texto solo visible en tablet, desktop-->
-           <div class=" col m7 offset-l1 offset-m0 xl6 l6 hide-on-small-only margin-column-desktop">
-          <h4 class="lime-text text-lighten-5">Descarga la nueva app</h4>
-          <p class="lime-text text-lighten-5">La versión actualizada de labcar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-          <br>
-          <p class="lime-text text-lighten-5"> Con solo tocar un botón, un auto llega a tu ubicación: Súbete y no te preocupes: Tu conductor sabe exactamente a donde ir.</p>
-        </div>
+          <h3 class="hide-on-med-and-up lime-text text-lighten-5 center-align ">The new App</h3>
+          <!--Sub columna: Imagen de telefono movil-->
+          <figure class="col m4 xl5">
+            <img src="assets/images/iPhone6Plus.png" alt="responsive-img" class="responsive-img">
+          </figure>
+          <!-- Sub-columna: Texto solo visible en tablet, desktop-->
+          <div class="col m7 offset-l1 offset-m0 xl6 l6 hide-on-small-only margin-column-desktop">
+            <h4 class="lime-text text-lighten-5">Download the new App</h4>
+            <p class="lime-text text-lighten-5">The updated version of labcar is full of new features to get where you want even easier and faster.</p>
+            <br>
+            <p class="lime-text text-lighten-5">At the touch of a button, a car arrives at your location: Get on it and do not worry: Your driver knows exactly where to go.</p>
+          </div>
         </div>
         <!-- Segunda columna: Texto inferior, solo visible en mobile-->
         <div class="col s12 hide-on-med-and-up">
-          <h6 class="lime-text text-lighten-5 margin-element "><strong>Llega a tu destino aún más rápido</strong></h6>
+          <h6 class="lime-text text-lighten-5 margin-element"><strong>Reach your destination even faster</strong></h6>
         </div>
       </div>
     </div>
@@ -97,9 +101,9 @@
     <div class="background-image second-background-image">
       <div class="row">
         <div class="col s12 offset-l8 l4 offset-m6 m6 opacity ">
-          <h4 class="lime-text text-lighten-5 margin-element">Conduce cuando quieras</h4>
-          <h6 class="lime-text text-lighten-5 margin-element">LabCar es un opción flexible para alcanzar tus metas financieras</h6>
-          <button type="input" class=" margin-element btn amber darken-2 modal-trigger"  data-target="driverModal"><strong>Conviertete en un conductor</strong></button>
+          <h4 class="lime-text text-lighten-5 margin-element">Drive when you want</h4>
+          <h6 class="lime-text text-lighten-5 margin-element">LabCar is a flexible option to achieve your financial goals</h6>
+          <button type="input" class=" margin-element btn amber darken-2 modal-trigger" data-target="driverModal"><strong>Become a driver</strong></button><!--third modal:become driver-->
         </div>
       </div>
     </div>
@@ -111,30 +115,29 @@
         <!-- Primera columna: Tarifa-->
         <div class="col s12 offset-m1 m10 offset-l1 l4 margin-column-desktop">
           <div>
-          <h2 class="lime-text text-lighten-5 margin-element">Tarifa</h2>
-          <h5 class="lime-text text-lighten-5 margin-element">Consulta las tarifa LabCar aquí</h5>
+            <h2 class="lime-text text-lighten-5 margin-element">Rate</h2>
+            <h5 class="lime-text text-lighten-5 margin-element">Check the LabCar rate here</h5>
           </div>
            <!-- Formulario de ruta-->
           <form >
-    <div class="input-field ">
-      <span class="col s1"><img src="assets/images/shape.png" alt=""></span>
-      <div class="col s11">
-        <input type="text" class="validate" placeholder="Ingrese su punto de partida">
-      </div>
-    </div>
-    <div class="input-field ">
-      <span class="col s1 "><img src="assets/images/shape2.png" alt=""></span>
-      <div class="col s11 background-color">
-        <input type="text" class="validate"  placeholder="Ingrese su punto de destino">
-      </div>
-    </div>
-    <div class="input-field ">
-      <div class="offset-s3 col s8">
-        <button type="submit" class=" btn lime lighten-5"><strong class="black-text">¡TRAZAR RUTA!</strong></button>
-      </div>
-    </div>
-  </form>
-
+           <div class="input-field ">
+             <span class="col s1"><img src="assets/images/shape.png" alt=""></span>
+             <div class="col s11">
+               <input type="text" class="validate" placeholder="Input your starting point">
+             </div>
+           </div>
+           <div class="input-field ">
+             <span class="col s1 "><img src="assets/images/shape2.png" alt=""></span>
+             <div class="col s11">
+               <input type="text" class="validate"  placeholder="Input your destination point">
+             </div>
+           </div>
+           <div class="input-field ">
+            <div class="offset-s3 col s8">
+              <button type="submit" class=" btn lime lighten-5"><strong class="black-text">TRACE ROUTE!</strong></button>
+            </div>
+           </div>
+          </form>
         </div>
         <!-- Segunda columna: Mapa-->
         <div class="col s12 offset-m1 offset-l1 m10 l5">
@@ -147,256 +150,253 @@
   </section>
   <!--FOOTER-->
   <footer class=" grey darken-4 ">
-  <div class="contr">
-    <div class="row ">
-      <!--Primera Fila: Imagen del logo-->
-      <div class="">
-        <div class="row">
-          <div class="col s12">
-            <figure><img src="assets/images/logoBlanco.png" alt="" class="responsive-img"></figure>
+    <div class="">
+      <div class="row ">
+        <!--Primera Fila: Imagen del logo-->
+        <div class="">
+          <div class="row">
+            <div class="col s12">
+              <figure><img src="assets/images/logoBlanco.png" alt="" class="responsive-img"></figure>
+            </div>
           </div>
+          <hr class="margin-element">
         </div>
-        <hr class="margin-element">
-      </div>
-      <!--Segunda Fila: 2 columnas de links, columna de redes sociales, columna de logos de apple y playstore-->
-      <div class="contai margin-element">
-        <div class="row">
-          <div class="col s12 ">
-            <div class="row">
-              <!--Primera Columna:Redes sociales-->
-              <div class="offset-s7 col s5 offset-l0 m3 l3">
-                <a href="#"><i class="fa fa-facebook lime-text text-lighten-5" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter lime-text text-lighten-5" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin lime-text text-lighten-5" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-apple lime-text text-lighten-5" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-play lime-text text-lighten-5" aria-hidden="true"></i></a>
-              </div>
-              <!--Segunda Columna:links-->
-              <div class="col s6  m3 l3">
-                <ul class="">
-                  <li><a class="lime-text text-lighten-5" href="#">Viaja </a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">Conduce</a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">Ciudades</a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">Ciudades</a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">Entrega</a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">¿Cómo funciona?</a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">Paises</a></li>
-                  <li><a class="lime-text text-lighten-5" href="#">Seguridad</a></li>
-                </ul>
-              </div>
-              <!--Tercera Columna:links, no visible en mobile-->
-              <div class="hide-on-small-only col m3 l3">
-                <ul class="">
-                  <li><a  class="lime-text text-lighten-5" href="#">Oportunidades </a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">Nuestra historia</a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">API de LabCar</a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">Eventos</a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">Desarrolladores</a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">Servicios</a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">Laboratoria</a></li>
-                  <li><a  class="lime-text text-lighten-5" href="#">Coders</a></li>
-                </ul>
-              </div>
-              <!--Cuarta Columna:Logo(link) apple y playstore-->
-              <div class=" col s6 m3 l3">
-                <figure><a href="#"><img class="responsive-img"src="assets/images/appstore.png" alt=""></a></figure>
-                <figure><a href="#"><img class="responsive-img"src="assets/images/enBadgeWebGeneric.png" alt=""></a></figure>
+        <!--Segunda Fila: 2 columnas de links, columna de redes sociales, columna de logos de apple y playstore-->
+        <div class="margin-element">
+          <div class="row">
+            <div class="col s12 ">
+              <div class="row">
+                <!--Primera Columna:Redes sociales-->
+                <div class="offset-s7 col s5 offset-l0 m3 l3">
+                  <a href="#"><i class="fa fa-facebook lime-text text-lighten-5" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter lime-text text-lighten-5" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-linkedin lime-text text-lighten-5" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-apple lime-text text-lighten-5" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-play lime-text text-lighten-5" aria-hidden="true"></i></a>
+                </div>
+                <!--Segunda Columna:links-->
+                <div class="col s6  m3 l3">
+                  <ul class="">
+                    <li><a class="lime-text text-lighten-5" href="#">Travel</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">Drive</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">Cities</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">Cities</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">Delivery</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">How does this work?</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">Countries</a></li>
+                    <li><a class="lime-text text-lighten-5" href="#">Safety</a></li>
+                  </ul>
+                </div>
+                <!--Tercera Columna:links, no visible en mobile-->
+                <div class="hide-on-small-only col m3 l3">
+                  <ul class="">
+                    <li><a  class="lime-text text-lighten-5" href="#">Opportunities</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">Our history</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">LabCar API</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">Events</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">Developers</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">Services</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">Laboratoria</a></li>
+                    <li><a  class="lime-text text-lighten-5" href="#">Coders</a></li>
+                  </ul>
+                </div>
+                <!--Cuarta Columna:Logo(link) apple y playstore-->
+                <div class=" col s6 m3 l3">
+                  <figure><a href="#"><img class="responsive-img"src="assets/images/appstore.png" alt=""></a></figure>
+                  <figure><a href="#"><img class="responsive-img"src="assets/images/enBadgeWebGeneric.png" alt=""></a></figure>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr class="margin-element">
-      <!--Tercera Fila: Copyrigth-->
-      <div class="container margin-element">
-        <div class=" row">
-          <div class="col s12">
-            <p class="lime-text text-lighten-5">© 2017 LabCar technologies Inc.</p>
+        <hr class="margin-element">
+        <!--Tercera Fila: Copyrigth-->
+        <div class="container margin-element">
+          <div class=" row">
+            <div class="col s12">
+              <p class="lime-text text-lighten-5">© 2017 LabCar technologies Inc.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<!---...........................MODALES.............................----->
-<!-- ...............FIRST MODAL: Login................-->
-
+  </footer>
+  <!---...........................MODALES.............................----->
+  <!-- ...............FIRST MODAL: Login................-->
   <div id="login" class="modal lime lighten-5  modal-size" >
     <div class="modal-footer col m12 lime lighten-5 ">
       <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat"><i class="material-icons grey-text large">cancel</i></a>
     </div>
+    <!--CONTENIDO-->
     <div class="modal-content">
-            <div >
-             <figure>
-               <img class="responsive-img center-block circle z-depth-4" width="150px" height="150px"src="assets/images/usuario.jpeg" alt="">
-             </figure>
-             </div >
-             <form class="col m12">
-             <div class="row">
-               <div class="input-field col m9 offset-m1">
-                 <i class="material-icons prefix grey-text">account_circle</i>
-                 <input id="icon_prefix" type="text" class="validate">
-                 <label class="grey-text" for="icon_prefix">Username</label>
-               </div>
-               <div class="input-field col m9 offset-m1">
-                 <i class="material-icons prefix grey-text">https</i>
-                 <input id="icon_telephone" type="text" class="validate">
-                 <label class="grey-text"for="icon_telephone">Password</label>
-               </div>
-        <div class="input-field col s12 center-align margin-element">
-            <button type="submit" class="btn amber darken-1 z-depth-4">LOGING</button>
-        </div>
-        <div class="input-field">
-          <div class="col s12 center-align">
-            <h6 class="black-text">Forgot password?  <small><a class="red-text" href="#">click here</a></small></h6>
+      <!--IMAGEN DE USUSARIO-->
+      <div>
+        <figure>
+           <img class="responsive-img center-block circle z-depth-4" width="150px" height="150px"src="assets/images/usuario.jpeg" alt="">
+        </figure>
+      </div>
+      <!--FORMULARIO-->
+      <form class="col m12">
+        <div class="row">
+        <!--USUARIO-->
+          <div class="input-field col m9 offset-m1">
+            <i class="material-icons prefix grey-text">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label class="grey-text" for="icon_prefix">Username</label>
+          </div>
+          <!--PASSWORD-->
+          <div class="input-field col m9 offset-m1">
+            <i class="material-icons prefix grey-text">https</i>
+            <input id="icon_telephone" type="text" class="validate">
+            <label class="grey-text"for="icon_telephone">Password</label>
+          </div>
+          <!--BOTÓN DE LOGEO-->
+          <div class="input-field col s12 center-align margin-element">
+             <button type="submit" class="btn amber darken-1 z-depth-4">LOGING</button>
+          </div>
+          <div class="input-field">
+            <div class="col s12 center-align">
+              <h6 class="black-text">Forgot password?  <small><a class="red-text" href="#">click here</a></small></h6>
+            </div>
           </div>
         </div>
-        </div>
       </form>
-
-
     </div>
   </div>
-<!-- ...............SECOND MODAL: Registry................-->
+  <!-- ...............SECOND MODAL: Registry................-->
   <div id="registryModal" class="modal lime lighten-5 modal-size " >
-
     <div class="modal-content">
-      <div class="">
-        <div class="row">
-          <div class="col s12 ">
-            <div class="col s11 offset-s1 center-block">
-             <button type="button" class="btn black margin-element z-depth-4">Do you already have an account?</button>
-           </div>
-      <p class="center-align">Or create an account</p>
-      <form>
-        <div class="input-field col s6">
-          <input id="exampleInputName1" type="text" class="validate">
-          <label class="grey-text"for="exampleInputName1">Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input type="text" class="validate" id="exampleInputLastname1">
-          <label class="grey-text"for="exampleInputLastname1">Last Name</label>
-        </div>
-        <div class="input-field col s12">
-          <input type="text" class="validate" id="exampleInputEmail1">
-          <label class="grey-text"for="exampleInputEmail1">E-mail</label>
-        </div>
-        <div class="input-field col s12">
-          <input type="text" class="validate" id="exampleInputPhone1">
-          <label class="grey-text"for="exampleInputPhone1">Phone</label>
-        </div>
-        <div class="input-field col s12">
-          <input type="text" class="validate" id="exampleInputPassword1" >
-          <label class="grey-text"for="exampleInputPassword1">Password</label>
-        </div>
-        <div class="input-field col s12">
-          <input type="text" class="validate"id="exampleInputCity1">
-          <label class="grey-text"for="exampleInputCity1">City</label>
-        </div>
-        <div class="input-field col s12">
-          <input type="text" class="validate" id="exampleInputInvitation code1" >
-          <label class="grey-text"for="exampleInputInvitation code1">(Optional) invitation code</label>
-        </div>
-
-    <div class="input-field col s12">
-      <select >
-        <option value="" disabled selected>How did you hear about us?</option>
-        <option value="">Friends</option>
-        <option value="">Family</option>
-        <option value="">Tv, radio</option>
-        <option value="">Social networks</option>
-      </select>
-  </div>
-
-
-      <div class="form-group">
-        <button type="submit" class="btn  blue darken-3 z-depth-4">Submit <i class="material-icons right">send</i</button>
-        </div>
-        <div class="modal-footer col m12 lime lighten-5 ">
-          <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat">close</a>
-        </div>
-
-      </form>
-      </div>
-      </div>
-      </div>
-
-
-
-    </div>
-  </div>
-<!-- ...............THIRD MODAL: Become a driver................-->
-<div id="driverModal" class="modal lime lighten-5 modal-size " >
-
-  <div class="modal-content">
-
       <div class="row">
         <div class="col s12 ">
-    <form>
-      <div class="input-field col s12">
-        <h5 class="black-text">Do you have a 4-door vehicle?</h5>
-          <select>
-            <option value="">Yes</option>
-            <option value="">No</option>
-          </select>
-      </div>
-      <div class="input-field col s12">
-        <h5 class="black-text">Brand</h5>
-        <select>
-          <option value="" disabled selected>Choose the brand of the vehicle</option>
-          <option value="">Chevrolet</option>
-          <option value="">Audi</option>
-          <option value="">Peugeot</option>
-          <option value="">Volkswagen</option>
-          <option value="">Porsche</option>
-          <option value="">Lamborghini</option>
-        </select>
-        <p class="black-text">Do not see your vehicle on this list? Send us an e-mail to <a class="blue-text" href="#">sociosmdv@labcar.com</a></p>
-      </div>
-      <div class="input-field col s12">
-        <h5 class="black-text">Model</h5>
-        <select>
-          <option value="" disabled selected>Choose the model of the vehicle</option>
-          <option value="">Cross UP</option>
-          <option value="">Golf</option>
-          <option value="">Audi Auno</option>
-          <option value="">Audi Atres</option>
-          <option value="">Audi Auno Sportback</option>
-        </select>
-      </div>
-      <div class="input-field col s12">
-         <h5 class="black-text">Year</h5>
-        <select>
-          <option value="">2017</option>
-          <option value="">2015</option>
-          <option value="">2014</option>
-          <option value="">2013</option>
-          <option value="">2012</option>
-        </select>
-      </div>
-      <div class="input-field col s12">
-          <h5 class="black-text">Registration number</h5>
-        <select>
-          <option value="">P-5653</option>
-          <option value="">P-4908</option>
-          <option value="">P-7053</option>
-          <option value="">P-7654</option>
-          <option value="">P-5363</option>
-        </select>
-        <p class="black-text">Vehicle registration information helps customers identify your vehicle</p>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn  blue darken-3 z-depth-4">Submit <i class="material-icons right">send</i</button>
+          <div class="col s11 offset-s1 center-block">
+            <button type="button" class="btn black margin-element z-depth-4">Do you already have an account?</button>
+          </div>
+          <p class="center-align">Or create an account</p>
+          <!--FORMULARIO-->
+          <form>
+            <div class="input-field col s6">
+              <input id="exampleInputName1" type="text" class="validate">
+              <label class="grey-text"for="exampleInputName1">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" class="validate" id="exampleInputLastname1">
+              <label class="grey-text"for="exampleInputLastname1">Last Name</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="text" class="validate" id="exampleInputEmail1">
+              <label class="grey-text"for="exampleInputEmail1">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="text" class="validate" id="exampleInputPhone1">
+              <label class="grey-text"for="exampleInputPhone1">Phone</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="text" class="validate" id="exampleInputPassword1" >
+              <label class="grey-text"for="exampleInputPassword1">Password</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="text" class="validate"id="exampleInputCity1">
+              <label class="grey-text"for="exampleInputCity1">City</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="text" class="validate" id="exampleInputInvitation code1" >
+              <label class="grey-text"for="exampleInputInvitation code1">(Optional) invitation code</label>
+            </div>
+            <div class="input-field col s12">
+              <select >
+                <option value="" disabled selected>How did you hear about us?</option>
+                <option value="">Friends</option>
+                <option value="">Family</option>
+                <option value="">Tv, radio</option>
+                <option value="">Social networks</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <button type="submit" class="btn  blue darken-3 z-depth-4">Submit <i class="material-icons right">send</i</button>
+            </div>
+            <div class="modal-footer col m12 lime lighten-5 ">
+              <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat">close</a>
+            </div>
+          </form>
         </div>
-        <div class="modal-footer col m12 lime lighten-5 ">
-          <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat">close</a>
-        </div>
-    </form>
+      </div>
     </div>
-    </div>
-
   </div>
-</div>
+  <!-- ...............THIRD MODAL: Become a driver................-->
+  <div  class="modal lime lighten-5 modal-size " id="driverModal" >
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12 ">
+          <!--FORMULARIO-->
+          <form>
+            <!--PUERTAS DEL VEHICULO-->
+            <div class="input-field col s12">
+              <h5 class="black-text">Do you have a 4-door vehicle?</h5>
+              <select>
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+            <!--MARCA-->
+            <div class="input-field col s12">
+              <h5 class="black-text">Brand</h5>
+              <select>
+                <option value="" disabled selected>Choose the brand of the vehicle</option>
+                <option value="">Chevrolet</option>
+                <option value="">Audi</option>
+                <option value="">Peugeot</option>
+                <option value="">Volkswagen</option>
+                <option value="">Porsche</option>
+                <option value="">Lamborghini</option>
+              </select>
+              <p class="black-text">Do not see your vehicle on this list? Send us an e-mail to <a class="blue-text" href="#">sociosmdv@labcar.com</a></p>
+            </div>
+            <!--MODELO-->
+            <div class="input-field col s12">
+              <h5 class="black-text">Model</h5>
+              <select>
+                <option value="" disabled selected>Choose the model of the vehicle</option>
+                <option value="">Cross UP</option>
+                <option value="">Golf</option>
+                <option value="">Audi Auno</option>
+                <option value="">Audi Atres</option>
+                <option value="">Audi Auno Sportback</option>
+              </select>
+              </div>
+            <!--AÑO-->
+            <div class="input-field col s12">
+              <h5 class="black-text">Year</h5>
+              <select>
+                <option value="">2017</option>
+                <option value="">2015</option>
+                <option value="">2014</option>
+                <option value="">2013</option>
+                <option value="">2012</option>
+              </select>
+            </div>
+            <!--NUMERO DE MATRÍCULA-->
+            <div class="input-field col s12">
+              <h5 class="black-text">Registration number</h5>
+              <select>
+                <option value="">P-5653</option>
+                <option value="">P-4908</option>
+                <option value="">P-7053</option>
+                <option value="">P-7654</option>
+                <option value="">P-5363</option>
+              </select>
+              <p class="black-text">Vehicle registration information helps customers identify your vehicle</p>
+            </div>
+            <div class="input-field">
+              <button type="submit" class="btn  blue darken-3 z-depth-4">Submit <i class="material-icons right">send</i></button>
+            </div>
+            <div class="modal-footer col s12 lime lighten-5 ">
+              <a href="#!" class="modal-action  modal-close waves-effect waves-green btn-flat">close</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Vínculo jQuery before materialize.js-->
   <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
